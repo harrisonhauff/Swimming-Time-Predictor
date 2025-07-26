@@ -1,2 +1,1 @@
-# Swimming-Time-Predictor
-Model that predicts the time of a swimmer in the 100m freestyle at the olympics based on the olympic year and the place they got. 
+For my first project, i wanted to learn and develop my skills in developing predictive models in a field I am passionate in, this being Swimming, more specifically thr 100m Freeestyle. The main reason beehind choosing this as controversily, the 2024 Paris Olympic pool was only 2.1m in depth compared to the usual 3m of depth, which some believe, myself included, may have resulted in slower times than what was expected, especially since the world championships from the previous year had faster 
