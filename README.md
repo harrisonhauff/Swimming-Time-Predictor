@@ -60,15 +60,20 @@ These metrics suggest the model is reasonably accurate for its simplicity.
 
 📊 Predicted vs Actual Times — Men's 100m Freestyle Final, 2024 Olympics (Model 1)
 
-| Rank     | Predicted Time (s) | Actual Time (s) | % Difference |
-| -------- | ------------------ | --------------- | ------------ |
-| 1        | 46.11              | 46.40           | 0.63%        |
-| 2        | 46.28              | 47.48           | 2.58%        |
-| 3        | 46.46              | 47.49           | 2.21%        |
-| 4        | 46.64              | 47.50           | 1.85%        |
-| 5        | 46.82              | 47.71           | 1.91%        |
-| 6        | 46.99              | 47.80           | 1.72%        |
-| 7        | 47.17              | 47.96           | 1.67%        |
-| 8        | 47.35              | 47.98           | 1.33%        |
-| **Mean** | **46.73**          | **47.54**       | **1.74%**    |
+| Rank     | Predicted Time (s) | Actual Time (s) | Time Difference (s) | % Difference |
+| -------- | ------------------ | --------------- | ------------------- | ------------ |
+| 1        | 46.11              | 46.40           | 0.29                | 0.63%        |
+| 2        | 46.28              | 47.48           | 1.20                | 2.58%        |
+| 3        | 46.46              | 47.49           | 1.03                | 2.21%        |
+| 4        | 46.64              | 47.50           | 0.86                | 1.85%        |
+| 5        | 46.82              | 47.71           | 0.89                | 1.91%        |
+| 6        | 46.99              | 47.80           | 0.81                | 1.72%        |
+| 7        | 47.17              | 47.96           | 0.79                | 1.67%        |
+| 8        | 47.35              | 47.98           | 0.63                | 1.33%        |
+| **Mean** | **46.73**          | **47.54**       | **0.81**            | **1.74%**    |
+
+
+
+⚙️ Model Flaws
+Although generally, swimmers do get faster, the extent to which they get faster was vastly overcalculated with the linear regression model, with it having an average time of 46.73, which was faster than the existing World Record in the event. Moving forward, a struggle that came with producing an accurate model were both the model type and the dataset, as the linear regression model is great at predicting simple trends, something like swimming where there is alot of factors at play, was always going to make this sort of model difficult to work effectively. Additionally, the dataset although from 1972-2020, only included the finalists and the results in the finals and their rankings in the dataset. This generalised all swimmers as their was little to seperate between them. Moving forward, I instead chose to adjust the dataset which we trained from in order to better reflect the type of performances that would be more indicative of the 2024 Olympics. This will be swims from 2011-2023 at World Championships and Olympic Games in the event, as swimming in this period is as close to it is in 2024. Additionally, final qualifying swims, or semifinal/quarterfinal swims will also be considered in training a model. Lastly Age will be included as I believe the age/experience of an athlete may affect how they approach their swim in the quarter/semifinals before their final swims. 
 
