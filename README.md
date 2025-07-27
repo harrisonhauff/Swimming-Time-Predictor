@@ -47,6 +47,7 @@ Feature	Coefficient
 Year	-0.0987
 Rank	+0.1773
 Interpretation: As years progress, times improve (negative slope). Higher ranks (e.g., 8th vs 1st) are associated with slower times (positive slope).
+
 📈 Model Evaluation
 
 from sklearn.metrics import mean_absolute_error, mean_squared_error
@@ -77,5 +78,6 @@ These metrics suggest the model is reasonably accurate for its simplicity.
 
 
 ⚙️ Model Flaws
+
 Although generally, swimmers do get faster, the extent to which they get faster was vastly overcalculated with the linear regression model, with it having an average time of 46.73, which was faster than the existing World Record in the event. Moving forward, a struggle that came with producing an accurate model were both the model type and the dataset, as the linear regression model is great at predicting simple trends, something like swimming where there is alot of factors at play, was always going to make this sort of model difficult to work effectively. Additionally, the dataset although from 1972-2020, only included the finalists and the results in the finals and their rankings in the dataset. This generalised all swimmers as their was little to seperate between them. Moving forward, I instead chose to adjust the dataset which we trained from in order to better reflect the type of performances that would be more indicative of the 2024 Olympics. This will be swims from 2011-2023 at World Championships and Olympic Games in the event, as swimming in this period is as close to it is in 2024. Additionally, final qualifying swims, or semifinal/quarterfinal swims will also be considered in training a model. Lastly Age will be included as I believe the age/experience of an athlete may affect how they approach their swim in the quarter/semifinals before their final swims. 
 
