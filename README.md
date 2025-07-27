@@ -59,13 +59,16 @@ Root Mean Squared Error (RMSE): ~0.43 seconds
 These metrics suggest the model is reasonably accurate for its simplicity.
 
 📊 Predicted vs Actual Times — Men's 100m Freestyle Final, 2024 Olympics
-Rank	Predicted Time (s)	Actual Time (s)	% Difference
-1	46.11	46.40	0.63%
-2	46.28	47.48	2.58%
-3	46.46	47.49	2.21%
-4	46.64	47.50	1.85%
-5	46.82	47.71	1.91%
-6	46.99	47.80	1.72%
-7	47.17	47.96	1.67%
-8	47.35	47.98	1.33%
-Mean	46.73	47.54	1.74%
+
+| Rank     | Predicted Time (s) | Actual Time (s) | % Difference |
+| -------- | ------------------ | --------------- | ------------ |
+| 1        | 46.11              | 46.40           | 0.63%        |
+| 2        | 46.28              | 47.48           | 2.58%        |
+| 3        | 46.46              | 47.49           | 2.21%        |
+| 4        | 46.64              | 47.50           | 1.85%        |
+| 5        | 46.82              | 47.71           | 1.91%        |
+| 6        | 46.99              | 47.80           | 1.72%        |
+| 7        | 47.17              | 47.96           | 1.67%        |
+| 8        | 47.35              | 47.98           | 1.33%        |
+| **Mean** | **46.73**          | **47.54**       | **1.74%**    |
+
