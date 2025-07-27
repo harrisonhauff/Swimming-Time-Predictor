@@ -11,6 +11,8 @@ The goal of this project is twofold:
 Build and evaluate a regression model to predict Olympic 100m Freestyle times over the years.
 Investigate whether the 2024 Olympic results were unusually slow, potentially due to the shallower pool.
 
+Model 1️⃣, Linear Regression
+
 🔧 Data Preprocessing
 
 I started by using a Kaggle swimming dataset that contained all Olympic swimming results. After cleaning the data, I filtered it to include only Men's 100m Freestyle results from 1972 onwards—a reasonable starting point, given the modernization of swimming and Olympic standards during that time.
