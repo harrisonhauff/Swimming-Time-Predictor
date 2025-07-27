@@ -58,7 +58,7 @@ Mean Absolute Error (MAE): ~0.35 seconds
 Root Mean Squared Error (RMSE): ~0.43 seconds
 These metrics suggest the model is reasonably accurate for its simplicity.
 
-📊 Predicted vs Actual Times — Men's 100m Freestyle Final, 2024 Olympics
+📊 Predicted vs Actual Times — Men's 100m Freestyle Final, 2024 Olympics (Model 1)
 
 | Rank     | Predicted Time (s) | Actual Time (s) | % Difference |
 | -------- | ------------------ | --------------- | ------------ |
